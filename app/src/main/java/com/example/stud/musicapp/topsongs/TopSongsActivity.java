@@ -36,6 +36,10 @@ public class TopSongsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_top_songs);
 
+
+
+
+
         getSupportActionBar().setDisplayHomeAsUpEnabled( true ); //górny pasek aplikacji
 
         rvList = findViewById(R.id.rvList);
