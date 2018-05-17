@@ -22,7 +22,7 @@ public class MusicApplication extends Application {
                 .schemaVersion(1)
                 .deleteRealmIfMigrationNeeded()
                 .build();
-        
+
         Realm.compactRealm (realmConfiguration);
         Realm.setDefaultConfiguration (realmConfiguration);
 
