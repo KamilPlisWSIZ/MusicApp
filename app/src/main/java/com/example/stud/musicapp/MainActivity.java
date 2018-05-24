@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.stud.musicapp.favorites.FavoritesActivity;
 import com.example.stud.musicapp.topsongs.TopSongsActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -27,5 +28,18 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
+
+        Button bFavorites = findViewById(R.id.bFavorites);
+        bFavorites.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity.this, FavoritesActivity.class);
+                startActivity(intent);
+            }
+
+        });
+
+
         }
     }
